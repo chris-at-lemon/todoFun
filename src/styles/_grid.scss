@@ -1,0 +1,24 @@
+.container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+  flex-direction: row; /* only for desktop, pending responsive layout */
+
+  @media (max-width: 991px) {
+    flex-direction: column; 
+  }
+}
+.column {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100%;
+  position: relative;
+
+  &.cart {
+    flex-basis: 30%;
+    flex-grow: 0;
+  }
+}

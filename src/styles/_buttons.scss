@@ -1,0 +1,45 @@
+// Buttons
+.btn {
+  cursor: pointer;
+
+  &.btn-xs {
+
+    font-size: .75rem;
+  }
+  &.btn-sm {
+    width: 1.8rem;
+    height: 1.8rem;
+    padding-top: .125rem;
+    font-size: 1rem;
+  }
+
+  &.btn-danger {
+    background: #dc3545;
+    border: #dc3545;
+    color: #fff;
+  }
+
+  &.btn-transparent {
+    border: none;
+    background: rgba($color: #fff, $alpha: .2);
+    color: #fff;
+  }
+
+  &.btn-roundedCorners {
+    border-radius: .25rem;
+  }
+
+  &.btn-round {
+    border-radius: 50%;
+  }
+}
+.btn-destroy {
+  position: absolute;
+  top: -.5rem;
+  right: -.5rem;
+  box-shadow: 0 0.46875rem 2.1875rem rgba(220, 54, 69, .05), 0 0.5rem 1rem rgba(220, 54, 69, .20), 0 0.25rem 0.53125rem rgba(220, 54, 69,  .20), 0 0.125rem 0.1875rem rgba(220, 54, 69, .20);
+}
+.btn-destroy-badge {
+  display: inline-block;
+  margin-left: .25rem;
+}
